@@ -19,6 +19,5 @@ def main():
     # Start checking for incoming messages
     print("Bot is successfully polling for messages...")
     app.run_polling()
-
 if __name__ == '__main__':
     main()
