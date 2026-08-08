@@ -10,8 +10,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Cont
 # ----------------------------------------------------
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
-CHAT_ID = "YOUR_CHAT_ID"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 # Risk & Strategy Constraints
 Z_SCORE_THRESHOLD = 2.5       # Alert when price deviates past 2.5 standard deviations
